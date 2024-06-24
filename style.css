@@ -20,7 +20,7 @@ main{
 
 form{
     width: 35vw;
-    height: 60vh;
+    /* height: 60vh; */
     background-color: white;
     padding: 15px;
     border-radius: 10px 0px 0px 10px;
@@ -41,7 +41,7 @@ form .bloco{
 
 .div-img{
     width: 30vw;
-    height: 60vh;
+    height: 60.1vh;
     display: inline-block;
     background-image: url("img/imagem.jpg");
     background-size: cover; 
@@ -109,7 +109,7 @@ input{
     form{
         width: 80vw;
         border-radius: 10px;
-        height: 50vh;
+        /* height: 50vh; */
     }
 }
 
