@@ -7,6 +7,8 @@
 
 body{
     background-image: linear-gradient(85deg, #540000, #7f0100, #a90301);
+    height: 100vh;
+    width: 100vw;
 }
 
 main{
@@ -15,15 +17,24 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+}
+
+section{
+    width: 90%;
+    background-image: url("img/imagem.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
 form{
-    width: 35vw;
-    /* height: 60vh; */
+    width: 400px;
+    height: 60vh;
     background-color: white;
-    padding: 15px;
     border-radius: 10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 form h1{
@@ -36,31 +47,26 @@ form .bloco{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .div-img{
-    width: 30vw;
-    height: 60.1vh;
     display: inline-block;
     background-image: url("img/imagem.jpg");
     background-size: cover; 
     border-radius: 0px 10px 10px 0px;
 }
-input{
-    margin: 10px;
-}
 
 .email, .password{
     font-size: 14px;
 	padding: 10px 10px;
-	width: 70%;
+	width: 68%;
 	outline: none;
 	background: #FFFFFF;
 	color: #000000;
 	border: none;
 	border-radius: 5px;
 	box-shadow: 0px 0px 5px 0px #000000;
+    margin-left: 10px;
 }
 
 #input-button{
@@ -89,27 +95,26 @@ input{
     border: none;
 }
 
-
-@media screen and (max-width: 868px) {
+@media screen and (min-width: 1000px){
     form{
-        width: 70vw;
+        width: 400px;
+    }
+    section{
+        width: 900px;
     }
 }
 
-@media screen and (max-width: 1010px){
-    .div-img, form{
-        width: 50vw;
+@media screen and (max-width: 755px){
+    form{
+        width: 300px;
     }
 }
 
-@media screen and (max-width: 615px){
-    .div-img{
-        display: none;
+@media screen and (max-width:600px){
+    section{
+        width: 300px;
     }
     form{
-        width: 80vw;
         border-radius: 10px;
-        /* height: 50vh; */
     }
 }
-
